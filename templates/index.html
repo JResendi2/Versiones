@@ -1,0 +1,14 @@
+{% extends 'layout/base.html' %} 
+
+{% block 'styles'%} 
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/form.css' %}" />
+{% endblock %} 
+
+{% block 'title' %} Inicio {% endblock %} 
+{% block 'content' %}
+    <h1>Bienvenido a tu gestor personal</h1>
+
+    <span class="aux-btns-form"><a href="{% url 'acerca_de' %}">Acerca de</a></span>
+{% endblock %}
